@@ -47,12 +47,9 @@ ZSH_THEME="terminalparty"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode autojump git git-flow gpg-agent pass npm)
+plugins=(autojump git git-flow gpg-agent pass npm)
 
 # User configuration
-#
-# fix annoying lag
-export KEYTIMEOUT=1
 
 #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
