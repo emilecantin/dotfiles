@@ -47,7 +47,7 @@ ZSH_THEME="emilecantin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump git git-flow gpg-agent pass npm)
+plugins=(last-working-dir autojump git git-flow gpg-agent pass npm)
 
 # User configuration
 
