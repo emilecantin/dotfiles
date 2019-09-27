@@ -39,6 +39,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 
 " Language support :
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
