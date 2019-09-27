@@ -3,5 +3,10 @@ emilecantin/dotfiles
 
 This repo is for my dotfiles. Feel free to copy it.
 
-TODO: Add an install script
-TODO: Port my VIM config in here
+Setup:
+
+```
+git clone git@github.com:emilecantin/dotfiles.git .dotfiles
+cd .dotfiles
+./install.sh
+```
