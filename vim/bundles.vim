@@ -31,7 +31,12 @@ Plugin 'techlivezheng/vim-plugin-minibufexpl'
 
 " Autocomplete :
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
+if has('nvim')
+  Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+else
+  Plugin 'ervandew/supertab'
+endif
 
 " Search & navigation :
 Plugin 'mileszs/ack.vim'
@@ -61,6 +66,7 @@ Plugin 'ledger/vim-ledger'
 
 " SCM support :
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 " Snippet support :
 "Plugin 'SirVer/ultisnips'

@@ -12,7 +12,7 @@ git submodule init
 git submodule update
 
 #Install VIM plugins
-vim -u vim/bundles.vim +PluginInstall +qall
+nvim -u vim/bundles.vim +PluginInstall +qall
 
 # set git config
 git config --global core.excludesfile ~/.dotfiles/git/.gitignore_global
