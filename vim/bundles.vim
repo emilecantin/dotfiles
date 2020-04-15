@@ -61,7 +61,7 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'mattn/emmet-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'ledger/vim-ledger'
 
 " SCM support :
