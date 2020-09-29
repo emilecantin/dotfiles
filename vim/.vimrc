@@ -55,7 +55,7 @@ set laststatus=2
 
 " Color Scheme
 colorscheme solarized
-set background=dark
+" set background=dark
 
 " GUI-specific things (MacVim and gVIM)
 if has("gui_running")
@@ -80,8 +80,23 @@ endif
 let g:airline_powerline_fonts = 1
 "let g:airline#extensions#branch#enabled = 0
 
+" Use ag for search
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
+endif
+
 " Do not change CTRL-P's working dir
 let g:ctrlp_working_path_mode = 0
+" Ignore node_modules
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \ }
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+
 
 "let g:nodejs_complete_config = {
 "\  'js_compl_fn': 'jscomplete#CompleteJS',
@@ -328,6 +343,9 @@ if has('nvim')
 
   " Add `:OR` command for organize imports of the current buffer.
   command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+  " Add :Prettier command to auto-format code
+  command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
   " Add (Neo)Vim's native statusline support.
   " NOTE: Please see `:h coc-status` for integrations with external plugins that

@@ -27,7 +27,7 @@ Plugin 'Align'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
-Plugin 'techlivezheng/vim-plugin-minibufexpl'
+" Plugin 'techlivezheng/vim-plugin-minibufexpl'
 
 " Autocomplete :
 "Plugin 'Valloric/YouCompleteMe'
@@ -62,7 +62,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'ledger/vim-ledger'
+Plugin 'ruanyl/vim-sort-imports'
 
 " SCM support :
 Plugin 'tpope/vim-fugitive'
