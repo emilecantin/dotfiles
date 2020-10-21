@@ -89,13 +89,14 @@ if executable('ag')
   cnoreabbrev AG Ack
 endif
 
-" Do not change CTRL-P's working dir
-let g:ctrlp_working_path_mode = 0
+" CTRL-P's working dir
+let g:ctrlp_working_path_mode = 'r'
 " Ignore node_modules
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
-  \ }
-" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+"   \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+
 
 
 "let g:nodejs_complete_config = {
