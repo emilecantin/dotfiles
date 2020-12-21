@@ -6,7 +6,7 @@ ln -s .dotfiles/tmux/.tmux.conf
 ln -s .dotfiles/.tmux.conf.local
 mkdir -p .config
 ln -s ~/.dotfiles/nvim .config
-ln -s .config/fish ~/.dotfiles/fish
+ln -s ~/.dotfiles/fish .config
 popd
 
 git submodule init
