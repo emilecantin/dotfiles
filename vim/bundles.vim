@@ -25,6 +25,7 @@ Plugin 'Align'
 
 " Customization :
 Plugin 'flazz/vim-colorschemes'
+Plugin 'noahfrederick/vim-noctu'
 Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
 " Plugin 'techlivezheng/vim-plugin-minibufexpl'
@@ -41,7 +42,12 @@ endif
 " Search & navigation :
 Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
+if has('nvim')
+  " Plugin 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+  Plugin 'scrooloose/nerdtree'
+else
+  Plugin 'scrooloose/nerdtree'
+endif
 
 " Language support :
 Plugin 'editorconfig/editorconfig-vim'

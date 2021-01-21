@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_esphomedocker:docker\x20run\x20\x2d\x2drm\x20\x2dv\x20\x22\x24PWD\x22\x3a/config\x20\x2dit\x20esphome/esphome\x3adev
+SETUVAR _fish_abbr_gc:git\x20checkout
 SETUVAR _fish_abbr_gcd:git\x20checkout\x20develop\x20\x26\x26\x20git\x20fetch\x20\x2d\x2dprune\x20\x26\x26\x20git\x20pull
 SETUVAR _fish_abbr_gp:git\x20push\x20\x2d\x2dforce
 SETUVAR _fish_abbr_grd:git\x20rebase\x20develop

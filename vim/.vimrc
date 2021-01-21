@@ -185,6 +185,7 @@ nnoremap <leader>j :tabnext<CR>
 nnoremap <leader>k :tabprevious<CR>
 
 
+" nnoremap <leader>v <cmd>CHADopen<cr>
 noremap <leader>t :NERDTreeToggle<CR>
 noremap <leader>f :NERDTreeFind<CR>
 
